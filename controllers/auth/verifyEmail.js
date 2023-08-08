@@ -1,4 +1,5 @@
 const { User } = require('../../models/user');
+const { sendEmail } = require('../../services/email');
 
 const verifyEmail = async (req, res) => {
   const { verificationToken } = req.params;
